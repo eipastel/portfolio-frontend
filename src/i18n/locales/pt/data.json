@@ -1,0 +1,116 @@
+{
+  "experience": [
+    {
+      "role": "Engenheiro Backend Pleno",
+      "company": "Compass UOL",
+      "type": "Tempo integral",
+      "location": "Brasil · Remoto",
+      "startDate": "2025-11",
+      "endDate": null,
+      "points": [
+        "Desenvolvi um agente de IA para um motor antifraude utilizando AWS Bedrock, permitindo seleção autônoma de provedores e ferramentas com base no contexto de transações em tempo real.",
+        "Projetei pipelines serverless com AWS API Gateway e Lambda, suportando fluxos de trabalho escaláveis e orientados a eventos.",
+        "Integrei notebooks Databricks ao pipeline de dados, possibilitando análises avançadas e engenharia de features em tempo real para modelos de detecção de fraude.",
+        "Implementei uma estratégia de observabilidade com CloudWatch e S3, centralizando logs e reduzindo o tempo de diagnóstico de incidentes.",
+        "Mentorei engenheiros juniores em boas práticas de backend, decisões de arquitetura e padrões de revisão de código."
+      ]
+    },
+    {
+      "role": "Engenheiro de Software Pleno",
+      "company": "DIXI SOLUÇÕES",
+      "type": "Tempo integral",
+      "location": "Curitiba, PR · Híbrido",
+      "startDate": "2025-02",
+      "endDate": "2025-11",
+      "points": [
+        "Implementei um pipeline de geração de relatórios com Kafka e Redis, reduzindo o tempo de processamento de 3 horas para 40 segundos.",
+        "Desenvolvi integrações de comunicação com equipamentos embarcados via sockets TCP/UDP, reduzindo custos de comunicação da plataforma em 60%.",
+        "Desenvolvi e mantive microsserviços backend com Java e Spring Boot, garantindo alta disponibilidade em ambiente distribuído.",
+        "Modelei e otimizei bancos de dados MySQL, garantindo integridade e eficiência em consultas críticas do sistema.",
+        "Mentorei desenvolvedores juniores em boas práticas de código, revisões técnicas e decisões de arquitetura."
+      ]
+    },
+    {
+      "role": "Engenheiro de Software Júnior",
+      "company": "DIXI SOLUÇÕES",
+      "type": "Tempo integral",
+      "location": "Curitiba, PR · Híbrido",
+      "startDate": "2024-01",
+      "endDate": "2025-02",
+      "points": [
+        "Desenvolvi e mantive APIs REST em Java com Spring Boot, contribuindo com novas funcionalidades e melhorias na plataforma backend.",
+        "Corrigi bugs, evoluí requisitos e refatorei sistemas existentes para melhorar estabilidade e manutenibilidade.",
+        "Modelei e executei consultas MySQL utilizando boas práticas de JPA/Hibernate para garantir integridade e eficiência dos dados.",
+        "Integrei dispositivos embarcados via sockets TCP/UDP, adquirindo experiência com comunicação de baixo nível e protocolos em tempo real.",
+        "Trabalhei em equipe com metodologias ágeis (Scrum/Kanban), participando de reuniões de planejamento, reviews e retrospectivas."
+      ]
+    },
+    {
+      "role": "Desenvolvedor Backend",
+      "company": "Freelance",
+      "type": "Freelance",
+      "location": "Brasil · Remoto",
+      "startDate": "2022-11",
+      "endDate": "2023-12",
+      "points": [
+        "Desenvolvi e mantive APIs REST utilizando Java e Spring Boot, atendendo diferentes clientes e projetos.",
+        "Implementei novas funcionalidades e corrigi problemas em aplicações backend existentes.",
+        "Modelei e consultei dados em MySQL utilizando boas práticas de JPA/Hibernate.",
+        "Construí experiência prática em desenvolvimento backend Java, aplicando conceitos de microsserviços e integração contínua em projetos reais."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Motor de IA Antifraude",
+      "description": "Agente de IA para detecção de fraudes em tempo real com seleção autônoma de provedores e ferramentas baseada no contexto da transação",
+      "company": "Compass UOL",
+      "color": "text-emerald-400",
+      "tags": ["AWS Bedrock", "Lambda", "API Gateway", "Databricks", "CloudWatch"]
+    },
+    {
+      "title": "Sistema de Ponto",
+      "description": "Plataforma de registro de ponto com dashboards em tempo real, análise de horas trabalhadas, métricas de horas extras e relatórios automatizados. Inclui pipeline de relatórios de alto desempenho reduzindo processamento de 3h para 40s",
+      "company": "DIXI SOLUÇÕES",
+      "color": "text-orange-400",
+      "tags": ["Java", "Spring Boot", "MySQL", "Kafka", "Redis", "SaaS"]
+    },
+    {
+      "title": "Sistema de Controle de Acesso",
+      "description": "Plataforma de controle de acesso em tempo real integrada com dispositivos embarcados via sockets TCP/UDP, gerenciando eventos de entrada/saída e reduzindo custos de comunicação em 60%",
+      "company": "DIXI SOLUÇÕES",
+      "color": "text-purple-400",
+      "tags": ["Java", "Spring Boot", "TCP/UDP", "MySQL", "IoT", "SaaS"]
+    },
+    {
+      "title": "Sistema de Gestão de Licenças",
+      "description": "Plataforma SaaS multi-tenant para cadastro de clientes, gestão de planos de assinatura e controle de licenças com isolamento de tenants e fluxos automatizados de cobrança",
+      "company": "DIXI SOLUÇÕES",
+      "color": "text-blue-400",
+      "tags": ["Java", "Spring Boot", "MySQL", "JPA/Hibernate", "REST API", "SaaS"]
+    }
+  ],
+  "personalProjects": [
+    {
+      "title": "AURA.DOC",
+      "description": "Plataforma de gestão clínica com agente de IA humanizado que atende pacientes 24/7 via WhatsApp — automatizando agendamentos, confirmações e CRM de pacientes. Reduziu faltas em 60% e tempo de resposta em 85%",
+      "color": "text-cyan-400",
+      "tags": ["AI Agent", "WhatsApp API", "SaaS", "Analytics"],
+      "url": "https://auradoc.com.br"
+    },
+    {
+      "title": "IndieRek",
+      "description": "API de reconhecimento facial baseada em decisão com verificação biométrica via uma única requisição POST. Thresholds customizáveis, retenção zero de dados, autenticação JWT e latência inferior a 50ms",
+      "color": "text-rose-400",
+      "tags": ["REST API", "Biometrics", "JWT", "SaaS"],
+      "url": "https://www.indierek.com"
+    },
+    {
+      "title": "Gestão Integral",
+      "description": "Plataforma SaaS para empresas de serviços criarem orçamentos profissionais em minutos, rastrearem custos reais e visualizarem margens de lucro por projeto — eliminando planilhas e achismos",
+      "color": "text-amber-400",
+      "tags": ["SaaS", "PDF Generation", "Analytics", "Multi-tenant"],
+      "url": "https://www.gestaointegral.com"
+    }
+  ]
+}

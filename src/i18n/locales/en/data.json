@@ -1,0 +1,116 @@
+{
+  "experience": [
+    {
+      "role": "Mid-Level Backend Engineer",
+      "company": "Compass UOL",
+      "type": "Full-time",
+      "location": "Brazil · Remote",
+      "startDate": "2025-11",
+      "endDate": null,
+      "points": [
+        "Developed an AI agent for an anti-fraud engine using AWS Bedrock, enabling autonomous provider and tool selection based on real-time transaction context.",
+        "Designed serverless pipelines with AWS API Gateway and Lambda, supporting scalable, event-driven workflows.",
+        "Integrated Databricks notebooks into the data pipeline, enabling advanced analytics and real-time feature engineering for fraud detection models.",
+        "Implemented an observability strategy with CloudWatch and S3, centralizing logs and reducing incident diagnosis time.",
+        "Mentored junior engineers on backend best practices, architecture decisions, and code review standards."
+      ]
+    },
+    {
+      "role": "Mid-Level Software Engineer",
+      "company": "DIXI SOLUÇÕES",
+      "type": "Full-time",
+      "location": "Curitiba, PR · Hybrid",
+      "startDate": "2025-02",
+      "endDate": "2025-11",
+      "points": [
+        "Implemented a report generation pipeline with Kafka and Redis, cutting processing time from 3 hours to 40 seconds.",
+        "Developed communication integrations with embedded equipment via TCP/UDP sockets, reducing platform communication costs by 60%.",
+        "Developed and maintained backend microservices with Java and Spring Boot, ensuring high availability in a distributed environment.",
+        "Modeled and optimized MySQL databases, ensuring integrity and efficiency in critical system queries.",
+        "Mentored junior developers on code best practices, technical reviews, and architectural decisions."
+      ]
+    },
+    {
+      "role": "Junior Software Engineer",
+      "company": "DIXI SOLUÇÕES",
+      "type": "Full-time",
+      "location": "Curitiba, PR · Hybrid",
+      "startDate": "2024-01",
+      "endDate": "2025-02",
+      "points": [
+        "Developed and maintained REST APIs in Java with Spring Boot, contributing to new features and improvements on the backend platform.",
+        "Fixed bugs, evolved requirements, and refactored existing systems to improve stability and maintainability.",
+        "Modeled and executed MySQL queries using JPA/Hibernate best practices to ensure data integrity and efficiency.",
+        "Integrated embedded devices via TCP/UDP sockets, gaining experience with low-level communication and real-time protocols.",
+        "Worked in team with agile methodologies (Scrum/Kanban), participating in planning meetings, reviews, and retrospectives."
+      ]
+    },
+    {
+      "role": "Backend Developer",
+      "company": "Freelance",
+      "type": "Freelance",
+      "location": "Brazil · Remote",
+      "startDate": "2022-11",
+      "endDate": "2023-12",
+      "points": [
+        "Developed and maintained REST APIs using Java and Spring Boot, serving different clients and projects.",
+        "Implemented new features and fixed issues in existing backend applications.",
+        "Modeled and queried data in MySQL using JPA/Hibernate best practices.",
+        "Built hands-on experience in Java backend development, applying microservices concepts and continuous integration in real-world projects."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Anti-Fraud AI Engine",
+      "description": "AI agent for real-time fraud detection with autonomous provider and tool selection based on transaction context",
+      "company": "Compass UOL",
+      "color": "text-emerald-400",
+      "tags": ["AWS Bedrock", "Lambda", "API Gateway", "Databricks", "CloudWatch"]
+    },
+    {
+      "title": "Time Tracking System",
+      "description": "Employee clock-in/out platform with real-time dashboards, work hours analytics, overtime metrics, and automated reports. Includes a high-throughput report pipeline cutting processing from 3h to 40s",
+      "company": "DIXI SOLUÇÕES",
+      "color": "text-orange-400",
+      "tags": ["Java", "Spring Boot", "MySQL", "Kafka", "Redis", "SaaS"]
+    },
+    {
+      "title": "Access Control System",
+      "description": "Real-time access control platform integrated with embedded devices via TCP/UDP sockets, managing entry/exit events and reducing communication costs by 60%",
+      "company": "DIXI SOLUÇÕES",
+      "color": "text-purple-400",
+      "tags": ["Java", "Spring Boot", "TCP/UDP", "MySQL", "IoT", "SaaS"]
+    },
+    {
+      "title": "License Management System",
+      "description": "Multi-tenant SaaS platform for client registration, subscription plan management, and license control with tenant isolation and automated billing workflows",
+      "company": "DIXI SOLUÇÕES",
+      "color": "text-blue-400",
+      "tags": ["Java", "Spring Boot", "MySQL", "JPA/Hibernate", "REST API", "SaaS"]
+    }
+  ],
+  "personalProjects": [
+    {
+      "title": "AURA.DOC",
+      "description": "AI-powered clinic management platform with a humanized AI agent that handles patient care 24/7 via WhatsApp — automating scheduling, confirmations, and patient CRM. Reduced no-shows by 60% and response time by 85%",
+      "color": "text-cyan-400",
+      "tags": ["AI Agent", "WhatsApp API", "SaaS", "Analytics"],
+      "url": "https://auradoc.com.br"
+    },
+    {
+      "title": "IndieRek",
+      "description": "Decision-based face matching API with biometric verification via a single POST request. Features custom thresholds, zero data retention, JWT auth, and sub-50ms latency",
+      "color": "text-rose-400",
+      "tags": ["REST API", "Biometrics", "JWT", "SaaS"],
+      "url": "https://www.indierek.com"
+    },
+    {
+      "title": "Gestão Integral",
+      "description": "SaaS platform for service businesses to create professional quotes in minutes, track real costs, and visualize profit margins per project — eliminating spreadsheets and guesswork",
+      "color": "text-amber-400",
+      "tags": ["SaaS", "PDF Generation", "Analytics", "Multi-tenant"],
+      "url": "https://www.gestaointegral.com"
+    }
+  ]
+}
