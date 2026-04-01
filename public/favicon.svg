@@ -6,11 +6,11 @@
   <rect x="2" y="2" width="508" height="508" rx="94" stroke="#22c55e" stroke-opacity="0.15" stroke-width="4" fill="none"/>
 
   <!-- Letter T -->
-  <path d="M112 136 H272 V176 H212 V376 H172 V176 H112 Z" fill="#FAFAFA"/>
+  <path d="M88 136 H248 V176 H188 V376 H148 V176 H88 Z" fill="#FAFAFA"/>
 
   <!-- Letter D -->
-  <path d="M280 136 H360 C410 136 448 174 448 224 V288 C448 338 410 376 360 376 H280 Z M320 176 V336 H356 C386 336 408 314 408 284 V228 C408 198 386 176 356 176 Z" fill="#FAFAFA"/>
+  <path d="M256 136 H336 C386 136 424 174 424 224 V288 C424 338 386 376 336 376 H256 Z M296 176 V336 H332 C362 336 384 314 384 284 V228 C384 198 362 176 332 176 Z" fill="#FAFAFA"/>
 
   <!-- Green accent dot matching navbar -->
-  <circle cx="416" cy="392" r="20" fill="#22c55e"/>
+  <circle cx="392" cy="392" r="20" fill="#22c55e"/>
 </svg>

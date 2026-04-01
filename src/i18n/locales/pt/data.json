@@ -66,7 +66,8 @@
       "description": "Agente de IA para detecção de fraudes em tempo real com seleção autônoma de provedores e ferramentas baseada no contexto da transação",
       "company": "Compass UOL",
       "color": "text-emerald-400",
-      "tags": ["AWS Bedrock", "Lambda", "API Gateway", "Databricks", "CloudWatch"]
+      "tags": ["AWS Bedrock", "Lambda", "API Gateway", "Databricks", "CloudWatch"],
+      "new": true
     },
     {
       "title": "Sistema de Ponto",
@@ -96,7 +97,8 @@
       "description": "Plataforma de gestão clínica com agente de IA humanizado que atende pacientes 24/7 via WhatsApp — automatizando agendamentos, confirmações e CRM de pacientes. Reduziu faltas em 60% e tempo de resposta em 85%",
       "color": "text-cyan-400",
       "tags": ["AI Agent", "WhatsApp API", "SaaS", "Analytics"],
-      "url": "https://auradoc.com.br"
+      "url": "https://auradoc.com.br",
+      "new": true
     },
     {
       "title": "IndieRek",
@@ -111,6 +113,14 @@
       "color": "text-amber-400",
       "tags": ["SaaS", "PDF Generation", "Analytics", "Multi-tenant"],
       "url": "https://www.gestaointegral.com"
+    },
+    {
+      "title": "ByberHair",
+      "description": "Plataforma de gestão para barbearias com IA que automatiza agendamentos, confirmações de horário, follow-up e avisos aos clientes — tudo gerenciado por um agente de IA via WhatsApp",
+      "color": "text-yellow-400",
+      "tags": ["AI Agent", "WhatsApp API", "SaaS", "Automations"],
+      "url": "https://app.byberhair.com",
+      "new": true
     }
   ]
 }

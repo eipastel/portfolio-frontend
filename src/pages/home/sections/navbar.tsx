@@ -1,9 +1,13 @@
 import { useState, useEffect, useCallback } from "react";
-import { ArrowUpRight, Menu, X, Mail, Linkedin, Github, Copy, Check, ExternalLink } from "lucide-react";
+import { ArrowUpRight, Menu, X, Mail, Linkedin, Github, Copy, Check, ExternalLink, Download } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 const EMAIL = "thiagodev.diogo@gmail.com";
+
+export function openContactModal() {
+  window.dispatchEvent(new CustomEvent("open-contact-modal"));
+}
 
 const CONTACT_LINKS = [
   {
@@ -30,7 +34,9 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
   const [showContact, setShowContact] = useState(false);
   const [copied, setCopied] = useState(false);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const resumeUrl = i18n.language.startsWith("pt") ? "/thiago_cv_pt.pdf" : "/thiago_cv_en.pdf";
 
   const closeContact = useCallback(() => {
     setShowContact(false);
@@ -45,6 +51,12 @@ export function Navbar() {
     document.addEventListener("keydown", handleKey);
     return () => document.removeEventListener("keydown", handleKey);
   }, [showContact, closeContact]);
+
+  useEffect(() => {
+    const handleOpen = () => setShowContact(true);
+    window.addEventListener("open-contact-modal", handleOpen);
+    return () => window.removeEventListener("open-contact-modal", handleOpen);
+  }, []);
 
   const NAV_LINKS = [
     { href: "#about", label: t("nav.about") },
@@ -73,6 +85,14 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-3">
+          <a
+            href={resumeUrl}
+            download
+            className="cursor-pointer text-sm font-medium px-4 py-2 rounded-full hover:bg-muted transition-colors hidden sm:flex items-center gap-2"
+          >
+            {t("nav.resume")}
+            <Download className="w-4 h-4" />
+          </a>
           <button
             onClick={() => setShowContact(true)}
             className="cursor-pointer text-sm font-medium bg-primary text-primary-foreground px-4 py-2 rounded-full hover:bg-primary/90 transition-colors hidden sm:flex items-center gap-2"
@@ -107,6 +127,15 @@ export function Navbar() {
               </a>
             ))}
             <div className="border-t border-border/40 mt-2 pt-3 flex flex-col gap-2">
+              <a
+                href={resumeUrl}
+                download
+                onClick={() => setOpen(false)}
+                className="cursor-pointer text-sm font-medium px-4 py-3 rounded-full hover:bg-muted transition-colors flex items-center justify-center gap-2"
+              >
+                {t("nav.resume")}
+                <Download className="w-4 h-4" />
+              </a>
               <button
                 onClick={() => { setOpen(false); setShowContact(true); }}
                 className="cursor-pointer text-sm font-medium bg-primary text-primary-foreground px-4 py-3 rounded-full hover:bg-primary/90 transition-colors flex items-center justify-center gap-2"
