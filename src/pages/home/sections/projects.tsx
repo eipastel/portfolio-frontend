@@ -55,7 +55,7 @@ export function Projects() {
           ))}
         </div>
 
-        <motion.h2 variants={FADE_UP} className="text-2xl font-semibold mb-10 mt-16 tracking-tight">
+        <motion.h2 id="personal-projects" variants={FADE_UP} className="text-2xl font-semibold mb-10 mt-16 tracking-tight scroll-mt-20">
           {t("projects:personalTitle")}
         </motion.h2>
 

@@ -50,6 +50,7 @@ export function Navbar() {
     { href: "#about", label: t("nav.about") },
     { href: "#experience", label: t("nav.experience") },
     { href: "#work", label: t("nav.work") },
+    { href: "#personal-projects", label: t("nav.personalProjects") },
     { href: "#contact", label: t("nav.contact") },
   ];
 
