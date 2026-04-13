@@ -77,38 +77,47 @@ export function Experience() {
               <div className="flex items-center justify-center w-10 h-10 rounded-full border border-border bg-background shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-sm z-10">
                 <div className="w-2 h-2 rounded-full bg-primary" />
               </div>
-              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 sm:p-6 rounded-2xl border border-card-border bg-card shadow-sm hover:border-primary/30 transition-colors">
-                <div className="flex flex-col gap-3">
-                  <div className="min-w-0">
-                    <h3 className="font-semibold text-base sm:text-lg leading-tight">{job.role}</h3>
-                    <p className="text-muted-foreground text-sm mt-0.5">{job.company} · {job.type}</p>
-                    <p className="text-muted-foreground text-xs mt-0.5">{job.location}</p>
-                  </div>
-                  <div className="flex items-center gap-2 flex-wrap">
-                    <span className="px-2.5 py-1 rounded-full bg-muted/50 border border-border text-xs text-muted-foreground whitespace-nowrap">
-                      {formatDate(job.startDate)} — {formatDate(job.endDate)}
+              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] flex flex-col p-5 sm:p-6 rounded-2xl border border-card-border bg-card hover:bg-muted/30 transition-all relative overflow-hidden">
+                <span className="text-xs font-medium text-muted-foreground/70 uppercase tracking-widest mb-2 block">
+                  @ {job.company}
+                </span>
+                <div className="flex items-start gap-3 mb-1">
+                  <h3 className="text-lg sm:text-xl font-bold tracking-tight leading-tight">{job.role}</h3>
+                  {!job.endDate && (
+                    <span className="relative flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 shrink-0 mt-0.5">
+                      <span className="relative flex h-1.5 w-1.5">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+                        <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-400" />
+                      </span>
+                      {t("experience:present")}
                     </span>
-                    <span className="text-xs text-muted-foreground">
-                      {calcDuration(job.startDate, job.endDate)}
-                    </span>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-                        <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-border bg-background text-xs font-medium cursor-default hover:bg-muted transition-colors">
-                          {t("experience:details")}
-                        </div>
-                      </TooltipTrigger>
-                      <TooltipContent side="top" align="start" className="bg-card border border-border text-foreground px-4 py-3 rounded-xl shadow-lg max-w-sm">
-                        <ul className="space-y-2 text-xs">
-                          {job.points.map((point, i) => (
-                            <li key={i} className="flex gap-2">
-                              <span className="text-primary mt-0.5 shrink-0">•</span>
-                              <span className="leading-relaxed text-muted-foreground">{point}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </TooltipContent>
-                    </Tooltip>
-                  </div>
+                  )}
+                </div>
+                <p className="text-muted-foreground text-xs mb-4">{job.location} · {job.type}</p>
+                <div className="mt-auto flex items-center gap-1.5 flex-wrap">
+                  <span className="text-xs font-medium px-2.5 py-1 rounded bg-background border border-border whitespace-nowrap">
+                    {formatDate(job.startDate)} — {formatDate(job.endDate)}
+                  </span>
+                  <span className="text-xs font-medium px-2.5 py-1 rounded bg-background border border-border whitespace-nowrap">
+                    {calcDuration(job.startDate, job.endDate)}
+                  </span>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <div className="text-xs font-medium px-2.5 py-1 rounded bg-background border border-border cursor-default hover:bg-muted transition-colors">
+                        {t("experience:details")}
+                      </div>
+                    </TooltipTrigger>
+                    <TooltipContent side="top" align="start" className="bg-card border border-border text-foreground px-4 py-3 rounded-xl shadow-lg max-w-sm">
+                      <ul className="space-y-2 text-xs">
+                        {job.points.map((point, i) => (
+                          <li key={i} className="flex gap-2">
+                            <span className="text-primary mt-0.5 shrink-0">•</span>
+                            <span className="leading-relaxed text-muted-foreground">{point}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </TooltipContent>
+                  </Tooltip>
                 </div>
               </div>
             </motion.div>
