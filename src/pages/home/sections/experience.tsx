@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FADE_UP, STAGGER_CONTAINER } from "@/lib/animations";
 import { useTranslation } from "react-i18next";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 
 interface Job {
   role: string;
@@ -21,6 +22,19 @@ export function Experience() {
     if (!date) return t("experience:present");
     const [year, month] = date.split("-").map(Number);
     return `${monthNames[month - 1]} ${year}`;
+  }
+
+  function calcTotalYears(): number {
+    const now = new Date();
+    let totalMonths = 0;
+    for (const job of jobs) {
+      const [sy, sm] = job.startDate.split("-").map(Number);
+      const [ey, em] = job.endDate
+        ? job.endDate.split("-").map(Number)
+        : [now.getFullYear(), now.getMonth() + 1];
+      totalMonths += (ey - sy) * 12 + (em - sm);
+    }
+    return Math.ceil(totalMonths / 12);
   }
 
   function calcDuration(start: string, end: string | null): string {
@@ -46,8 +60,11 @@ export function Experience() {
         viewport={{ once: true, margin: "-100px" }}
         variants={STAGGER_CONTAINER}
       >
-        <motion.h2 variants={FADE_UP} className="text-2xl font-semibold mb-10 tracking-tight">
+        <motion.h2 variants={FADE_UP} className="text-2xl font-semibold mb-10 tracking-tight flex items-center gap-3">
           {t("experience:title")}
+          <span className="px-2.5 py-1 rounded-full bg-muted/50 border border-border text-xs font-normal text-muted-foreground">
+            {calcTotalYears()}+ {t("experience:yr")}
+          </span>
         </motion.h2>
 
         <div className="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-border before:to-transparent">
@@ -61,7 +78,7 @@ export function Experience() {
                 <div className="w-2 h-2 rounded-full bg-primary" />
               </div>
               <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 sm:p-6 rounded-2xl border border-card-border bg-card shadow-sm hover:border-primary/30 transition-colors">
-                <div className="flex flex-col gap-3 mb-4">
+                <div className="flex flex-col gap-3">
                   <div className="min-w-0">
                     <h3 className="font-semibold text-base sm:text-lg leading-tight">{job.role}</h3>
                     <p className="text-muted-foreground text-sm mt-0.5">{job.company} · {job.type}</p>
@@ -74,16 +91,25 @@ export function Experience() {
                     <span className="text-xs text-muted-foreground">
                       {calcDuration(job.startDate, job.endDate)}
                     </span>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-border bg-background text-xs font-medium cursor-default hover:bg-muted transition-colors">
+                          {t("experience:details")}
+                        </div>
+                      </TooltipTrigger>
+                      <TooltipContent side="top" align="start" className="bg-card border border-border text-foreground px-4 py-3 rounded-xl shadow-lg max-w-sm">
+                        <ul className="space-y-2 text-xs">
+                          {job.points.map((point, i) => (
+                            <li key={i} className="flex gap-2">
+                              <span className="text-primary mt-0.5 shrink-0">•</span>
+                              <span className="leading-relaxed text-muted-foreground">{point}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </TooltipContent>
+                    </Tooltip>
                   </div>
                 </div>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  {job.points.map((point, i) => (
-                    <li key={i} className="flex gap-2">
-                      <span className="text-primary mt-1 shrink-0">•</span>
-                      <span className="leading-relaxed">{point}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
             </motion.div>
           ))}

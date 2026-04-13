@@ -11,7 +11,7 @@ function App() {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    document.documentElement.lang = i18n.language;
+    document.documentElement.lang = i18n.language === "pt" ? "pt-BR" : "en";
     document.title = t("meta.title");
 
     const metaDescription = document.querySelector('meta[name="description"]');

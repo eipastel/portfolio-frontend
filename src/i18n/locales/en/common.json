@@ -23,7 +23,7 @@
   },
   "footer": {
     "rights": "All rights reserved.",
-    "role": "Software Engineer",
+    "role": "Backend Java Engineer",
     "specialization": "Backend Specialist"
   },
   "notFound": {
@@ -32,7 +32,7 @@
     "back": "Back to Home"
   },
   "meta": {
-    "title": "Thiago Diogo — Software Engineer | Backend Specialist",
-    "description": "Software Engineer specializing in scalable backend systems, distributed architectures, and high-performance solutions with Java, Spring Boot, and AWS."
+    "title": "Thiago Diogo — Backend Java Engineer | Backend Specialist",
+    "description": "Backend Java Engineer specializing in scalable backend systems, distributed architectures, and high-performance solutions with Java, Spring Boot, and AWS."
   }
 }
