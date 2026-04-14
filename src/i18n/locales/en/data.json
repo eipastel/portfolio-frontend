@@ -8,10 +8,10 @@
       "startDate": "2025-11",
       "endDate": null,
       "points": [
-        "Developed backend microservices in Java with Spring Boot for an anti-fraud engine, including AI agents built with AWS Bedrock for real-time decision-making.",
-        "Implemented LLM integration (AWS Bedrock), enabling contextual transaction analysis and dynamic provider and tool selection.",
-        "Designed and implemented serverless pipelines (API Gateway + Lambda) integrated with microservices, supporting distributed, event-driven architecture.",
-        "Implemented an observability strategy with CloudWatch, S3, and Dynatrace, reducing incident diagnosis time."
+        "Developed backend microservices in Java with Spring Boot for an anti-fraud engine, including the creation of AI agents using AWS Bedrock for real-time decision-making.",
+        "Implemented LLM integration using AWS Bedrock to support contextual transaction analysis and adaptive selection of third-party providers within a microservice architecture.",
+        "Designed and implemented serverless pipelines (API Gateway + Lambda) integrated with microservices, supporting distributed and event-driven architecture.",
+        "Implemented observability strategy using CloudWatch, S3, and Dynatrace, reducing incident diagnosis time."
       ]
     },
     {
@@ -23,10 +23,10 @@
       "endDate": "2025-11",
       "points": [
         "Developed and evolved backend microservices in Java with Spring Boot in a distributed environment, ensuring high availability and scalability.",
-        "Designed and implemented an async pipeline with Kafka and Redis, reducing processing time from 3 hours to 40 seconds.",
+        "Designed and implemented an asynchronous processing pipeline using Kafka and Redis, reducing processing time from 3 hours to 40 seconds.",
         "Developed device integrations via TCP/UDP sockets, reducing communication costs by 60%.",
         "Modeled and optimized MySQL queries, improving performance of critical operations.",
-        "Mentored developers on best practices, technical reviews, and architecture decisions."
+        "Mentored junior developers, supporting best practices, code reviews, and architectural decisions."
       ]
     },
     {
@@ -37,25 +37,25 @@
       "startDate": "2024-01",
       "endDate": "2025-02",
       "points": [
-        "Developed and maintained REST APIs in Java with Spring Boot, contributing to the evolution of backend systems in a distributed environment.",
-        "Performed refactoring and performance optimizations on existing services, improving stability and efficiency.",
-        "Modeled and optimized MySQL queries using JPA/Hibernate, ensuring high performance on critical operations.",
-        "Developed device integrations via TCP/UDP sockets, working with real-time communication.",
-        "Worked in an agile environment (Scrum/Kanban), actively participating in the product development cycle."
+        "Developed and maintained Java applications, ensuring optimal performance and reliability.",
+        "Performed refactoring and performance optimizations in existing services, improving system stability and efficiency.",
+        "Modeled and optimized MySQL queries using JPA/Hibernate, ensuring high performance in critical operations.",
+        "Developed integrations with devices via TCP/UDP, working with real-time communication.",
+        "Worked in an agile environment (Scrum/Kanban), actively contributing to the product development lifecycle."
       ]
     },
     {
-      "role": "Backend Java Developer (Freelance)",
-      "company": "Freelance",
-      "type": "Freelance",
+      "role": "Backend Java Developer (Junior)",
+      "company": "Byttecs Desenvolvimento de Software",
+      "type": "Full-time",
       "location": "Brazil · Remote",
-      "startDate": "2022-11",
+      "startDate": "2022-07",
       "endDate": "2023-12",
       "points": [
-        "Developed complete web systems for different clients, covering both the backend in Java with Spring Boot and the frontend with React/Next.js.",
-        "Designed and implemented REST APIs and microservices, including data modeling and MySQL database integration.",
+        "Developed end-to-end web systems for clients, working from backend (Java with Spring Boot) to frontend (React/Next.js).",
+        "Designed and implemented RESTful APIs and microservices, including data modeling and MySQL integration.",
         "Deployed and configured applications in production environments, ensuring availability and stability.",
-        "Performed continuous maintenance including bug fixes, improvements, and feature evolution."
+        "Maintained and evolved systems, delivering continuous improvements and new features."
       ]
     }
   ],

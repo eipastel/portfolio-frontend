@@ -9,9 +9,9 @@
       "endDate": null,
       "points": [
         "Desenvolvi microsserviços backend em Java com Spring Boot para um motor antifraude, incluindo a criação de agentes de IA com AWS Bedrock para tomada de decisão em tempo real.",
-        "Implementei integração com LLMs (AWS Bedrock), permitindo análise contextual de transações e seleção dinâmica de provedores e ferramentas.",
+        "Implementei integração com LLMs usando AWS Bedrock para suportar análise contextual de transações e seleção adaptativa de provedores terceirizados dentro de uma arquitetura de microsserviços.",
         "Projetei e implementei pipelines serverless (API Gateway + Lambda) integrados aos microsserviços, suportando arquitetura distribuída e orientada a eventos.",
-        "Implementei estratégia de observabilidade com CloudWatch, S3 e Dynatrace, reduzindo o tempo de diagnóstico de incidentes."
+        "Implementei uma estratégia de observabilidade utilizando CloudWatch, S3 e Dynatrace, reduzindo o tempo de diagnóstico de incidentes."
       ]
     },
     {
@@ -26,7 +26,7 @@
         "Projetei e implementei pipeline assíncrono com Kafka e Redis, reduzindo o tempo de processamento de 3 horas para 40 segundos.",
         "Desenvolvi integrações com dispositivos via sockets TCP/UDP, reduzindo em 60% os custos de comunicação.",
         "Modelei e otimizei queries em MySQL, melhorando a performance de operações críticas.",
-        "Atuei na mentoria de desenvolvedores, apoiando boas práticas, revisões técnicas e decisões de arquitetura."
+        "Atuei na mentoria de desenvolvedores juniores, apoiando boas práticas, revisões de código e decisões de arquitetura."
       ]
     },
     {
@@ -37,7 +37,7 @@
       "startDate": "2024-01",
       "endDate": "2025-02",
       "points": [
-        "Desenvolvi e mantive APIs REST em Java com Spring Boot, contribuindo para a evolução de sistemas backend em ambiente distribuído.",
+        "Desenvolvi e mantive aplicações Java, garantindo performance e confiabilidade.",
         "Realizei refatorações e otimizações de performance em serviços existentes, melhorando estabilidade e eficiência das aplicações.",
         "Modelei e otimizei consultas em MySQL com JPA/Hibernate, garantindo alta performance em operações críticas.",
         "Desenvolvi integrações com dispositivos via TCP/UDP, atuando com comunicação em tempo real.",
@@ -45,16 +45,16 @@
       ]
     },
     {
-      "role": "Desenvolvedor Backend Java Freelancer",
-      "company": "Freelance",
-      "type": "Freelance",
+      "role": "Desenvolvedor Backend Java Junior",
+      "company": "Byttecs Desenvolvimento de Software",
+      "type": "Tempo integral",
       "location": "Brasil · Remoto",
-      "startDate": "2022-11",
+      "startDate": "2022-07",
       "endDate": "2023-12",
       "points": [
         "Desenvolvi sistemas web completos para diferentes clientes, atuando desde o backend em Java com Spring Boot até o frontend com React/Next.js.",
         "Projetei e implementei APIs REST e microsserviços, incluindo modelagem de dados e integração com banco MySQL.",
-        "Realizei deploy e configuração de aplicações em ambiente de produção, garantindo disponibilidade e estabilidade.",
+        "Realizei deploy e configuração de aplicações em ambiente de produção, garantindo estabilidade e disponibilidade.",
         "Atuei na manutenção contínua dos sistemas, incluindo correções, melhorias e evolução de funcionalidades."
       ]
     }
